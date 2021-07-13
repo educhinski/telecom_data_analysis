@@ -93,6 +93,31 @@ class CleanTelecomData:
         else:
             print("Method unknown")
             return df
+    
+    def handle_missing_categorical_data_with_mean(self, df: pd.DataFrame, method="ffill"):
+
+        numeric_data = ['int16', 'int32', 'int64',
+                        'float16', 'float32', 'float64']
+
+        all_cols = df.columns.to_list()
+        num_cols = [c for c in all_cols if not df[c].dtypes in numeric_data]
+        
+        if method == "ffill":
+
+            for col in num_cols:
+                df[col] = df[col].fillna(method='ffill')
+
+            return df
+
+        elif method == "bfill":
+
+            for col in num_cols:
+                df[col] = df[col].fillna(method='bfill')
+
+            return df
+        else:
+            print("Method unknown")
+            return df
 
     def convert_to_mega_bytes(self, df):
 
