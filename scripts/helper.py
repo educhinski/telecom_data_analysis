@@ -6,9 +6,9 @@ class TelecomHelper:
   def __init__(self):
     pass
   
-  def read_csv(self, csv_path):
+  def read_csv(self, csv_path, missing_values=[]):
     try:
-        df = pd.read_csv(csv_path)
+        df = pd.read_csv(csv_path, na_values=missing_values)
         print("file read as csv")
         return df
     except FileNotFoundError:
