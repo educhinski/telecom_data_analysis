@@ -13,6 +13,16 @@ class TelecomHelper:
         return df
     except FileNotFoundError:
         print("file not found")
+  
+  def save_csv(self, df, csv_path):
+    try:
+        df.to_csv(csv_path, index=False)
+        print('File Successfully Saved.!!!')
+
+    except Exception:
+        print("Save failed...")
+
+    return df
     
   def percent_missing(self, df: pd.DataFrame) -> float:
 

@@ -6,7 +6,6 @@ from helper import TelecomHelper
 class CleanTelecomData:
     def __init__(self, df: pd.DataFrame):
         self.df = df
-        
         print('Automation in Action...!!!')
 
     def drop_duplicate(self, df: pd.DataFrame) -> pd.DataFrame:
