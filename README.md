@@ -22,4 +22,5 @@ Tasks Done
       
       1.7 Bivariate Analysis
 
-Note: cleaned_data.csv is not pushed to remote repo since the size is large large
+
+Note: cleaned_data.csv is not pushed to remote repo since the size is too to be pushed
