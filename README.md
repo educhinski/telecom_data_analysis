@@ -25,3 +25,14 @@ Tasks Done
 3. Prediction.
 
 Note: cleaned_data.csv is not pushed to remote repo since the size is too to be pushed
+
+
+#### Change branches in git
+Switch Branch using git checkout
+The easiest way to switch branch on Git is to use the “git checkout” command and specify the name of the branch you want to switch to.
+
+If the destination branch does not exist, you have to append the “-b” option, otherwise you won’t be able to switch to that branch.
+
+$ git checkout <existing_branch>
+
+$ git checkout -b <new_branch>
