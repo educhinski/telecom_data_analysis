@@ -21,6 +21,7 @@ Tasks Done
       1.6 Correlation Analysis
       
       1.7 Bivariate Analysis
-
+2. Use engagement Analysis
+3. Prediction.
 
 Note: cleaned_data.csv is not pushed to remote repo since the size is too to be pushed
